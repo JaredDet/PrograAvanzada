@@ -1,7 +1,7 @@
 import { esPar } from "../utilidades/esPar.js";
 import { seGana } from "./gana.js";
 import lanzarMensaje from "./mensaje/lanzaMensaje.js";
-import desactivarTodosLosBotones from "../boton/desactivaBotones.js";
+import desactivarBotonesGato from "../boton/desactivaBotones.js";
 import desactivar from "../boton/desactivaBoton.js";
 
 let contadorClick = 0;
@@ -14,7 +14,7 @@ export function dibujar() {
 
   if (seGana()) {
     lanzarMensaje(`Ha ganado ${boton.innerHTML}`);
-    desactivarTodosLosBotones();
+    desactivarBotonesGato();
   }
 }
 
